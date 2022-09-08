@@ -1,0 +1,15 @@
+*{
+  background-color: black;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+.title {
+  font-family: "Strait", sans-serif;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+}

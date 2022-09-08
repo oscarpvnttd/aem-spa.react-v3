@@ -1,0 +1,24 @@
+.cfooter{
+    color: white;
+    margin-top: 50px;
+    font-size: small;
+    margin-left: 20px;
+}
+
+.links{
+    float: right;
+}
+
+
+.arr{
+    color: white;
+    float: left;
+}
+
+.link{
+    margin-right: 20px;
+}
+
+.link:hover{
+    text-decoration: none;
+}

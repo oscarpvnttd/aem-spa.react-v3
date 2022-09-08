@@ -1,0 +1,133 @@
+.title {
+    font-family: "Strait", sans-serif;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.loginform {
+    margin-top: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+.login {
+    max-width: max-content;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-bottom: 100px;
+}
+
+.lmail {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: solid 1px #fff;
+    height: 40px;
+    text-align: left;
+    text-indent: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.pinp {
+    width: 91%;
+    background-color: black;
+    color: white;
+    border: solid 1px #fff;
+    height: 40px;
+    text-align: left;
+    text-indent: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.logb {
+    font-size: medium;
+    background-color: transparent;
+    color: white;
+    font-family: "Strait", sans-serif;
+    border-bottom: solid 1px #fff;
+    height: 40px;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    clear: both;
+}
+
+.logb:hover {
+    color: red;
+    border-bottom: solid 2px red;
+    cursor: pointer;
+}
+
+.login-span {
+    display: flex;
+    color: #fff;
+    font-family: "Strait", sans-serif;
+    font-size: small;
+    letter-spacing: 2px;
+}
+
+.navsi {
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.navsi:hover,
+.navolv:hover {
+    text-decoration: none;
+}
+
+.vis {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: gray;
+}
+
+.visbutton {
+    border: solid 1px #fff;
+    float: right;
+    margin-top: 5px;
+    height: 40px;
+    background-color: gray;
+}
+
+.visbutton:hover {
+    cursor: pointer;
+}
+
+.olv {
+    display: block;
+}
+
+.navolv {
+    font-size: medium;
+    text-align: left;
+    vertical-align: top;
+    clear: both;
+    text-decoration: none;
+}
+
+.con {
+    display: inline;
+    font-size: small;
+    color: #00b22d;
+    float:right;
+}
+
+.lock {
+    max-height: 15px;
+    vertical-align: middle;
+}

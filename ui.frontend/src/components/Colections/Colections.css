@@ -1,0 +1,45 @@
+.colections {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.col-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    background-color: transparent;
+}
+
+.col-card {
+    margin: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+
+.col-card:hover {
+    transform: scale(1.05);
+}
+
+.img-card {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    background-color: transparent;
+
+}
+
+.div-float {
+    position: relative;
+    top: 500px;
+    z-index: 2;
+    background-color: transparent;
+}
+
+#line{
+    width: auto;
+}

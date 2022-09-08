@@ -1,0 +1,47 @@
+
+
+.mailform{
+    margin-top: 10px;
+}
+
+.newsletter {
+    max-width: max-content;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.mail {
+    width: 83%;
+    background-color: black;
+    color: white;
+    border: solid 1px #fff;
+    height: 40px;
+    text-align: left;
+    text-indent: 5px;
+
+}
+
+
+.sub {
+    background-color: transparent;
+    color: white;
+    font-family: "Strait", sans-serif;
+    border-bottom: solid 1px #fff;
+    height: 40px;
+    float: right;
+    letter-spacing: 2px;
+}
+
+.sub:hover{
+    color: red;
+    border-bottom: solid 2px red;
+    cursor: pointer;
+}
+
+.info {
+    margin-top: 10px;
+    font-size: small;
+    color: white;
+}

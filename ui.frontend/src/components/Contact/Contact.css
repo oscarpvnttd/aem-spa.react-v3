@@ -1,0 +1,195 @@
+.file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 25px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    width: 100%;
+
+}
+
+.file input {
+    min-width: 14rem;
+    margin: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background-color: transparent;
+
+}
+
+input[type="file" i] {
+    appearance: none;
+    background-color: transparent;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+.file-custom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 25px;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-shadow: inset 0 0.2rem 0.4rem rgb(0 0 0 / 5%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:auto;
+}
+
+.upload-icon{
+    position: absolute;
+    top: 7px;
+    right: 70px;
+    z-index: 6;
+    display: block;
+    background-color: transparent;
+}
+
+.file-custom:before {
+    position: absolute;
+    top: -0.075rem;
+    right: -0.075rem;
+    bottom: -0.075rem;
+    z-index: 6;
+    display: block;
+    content: "__   Archivo";
+    height: 25px;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: red;
+    border: 0.075rem solid #ddd;
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+
+}
+
+.file-custom:after {
+    content: "";
+    cursor: pointer;
+}
+
+
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 85%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    padding: 16px;
+}
+
+.typetitle {
+    font-family: "Strait", sans-serif;
+    font-size: 50px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+
+#line {
+    z-index: 1;
+    position: relative;
+    top: 30px;
+    border-bottom: solid 1px #fff;
+}
+
+
+label {
+    font-size: medium;
+    color: white;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: 0;
+}
+
+.contact-inp,
+.filename {
+    width: 100%;
+    border: solid 1px #fff;
+    height: 35px;
+    margin: 5px 0 10px 0;
+    text-indent: 10px;
+    font-size: small;
+    color: white;
+}
+
+.custom-file-input {
+    cursor: pointer;
+}
+
+.custom-file-label {
+    background-color: black !important;
+    font-family: serif !important;
+    border: solid 1px #fff !important;
+    border-radius: 0%;
+}
+
+.custom-file-label::after {
+    content: "ARCHIVO";
+    font-family: "Teko", serif;
+    background-color: red;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.contact-text {
+    width: 100%;
+    border: solid 1px #fff;
+    height: 70px;
+    margin: 5px 0 10px 0;
+    text-indent: 10px;
+    font-size: small;
+    color: white;
+}
+
+.filename {
+    float: left;
+}
+
+#opcional {
+    font-family: serif;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+
+.env-button {
+    background-color: transparent;
+    color: white;
+    font-family: "Strait", sans-serif;
+    border-bottom: solid 1px #fff;
+    letter-spacing: 3px;
+    padding: 5px 17px;
+    float: right;
+}
+
+.env-button:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+    border-bottom: solid 1px red;
+}
+
