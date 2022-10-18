@@ -13,3 +13,20 @@ button:focus {
   text-align: center;
   letter-spacing: 3px;
 }
+
+b{
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar{
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track{
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: red;
+  border-radius: 20px;
+}

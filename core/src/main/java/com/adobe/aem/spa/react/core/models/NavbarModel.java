@@ -1,16 +1,13 @@
 package com.adobe.aem.spa.react.core.models;
 
-import javax.annotation.PostConstruct;
 
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.ResourceResolver;
 
 import com.adobe.cq.export.json.ComponentExporter;
 import org.apache.sling.models.annotations.Exporter;
 import com.adobe.cq.export.json.ExporterConstants;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
-import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 

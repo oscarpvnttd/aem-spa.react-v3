@@ -47,4 +47,4 @@ class CustomFooter extends Component {
 
 }
 
-export default MapTo('spa-react/components/cfooter')(CustomFooter, CustomFooterConfig);
+export default MapTo('spa-react-v3/components/cfooter')(CustomFooter, CustomFooterConfig);

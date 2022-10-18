@@ -1,9 +1,13 @@
-#cart {
+#cart-container{
     margin-left: auto;
     margin-right: auto;
     max-width: 85%;
-    height: auto;
-    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cart {
+    clear: both;
     background-color: transparent;
     padding: 0;
     display: flex;
@@ -11,7 +15,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    position: relative;
+    max-width: 100%;
+    height: auto;
+
 }
 
 #carrito,
@@ -22,11 +28,15 @@
 }
 
 #carrito {
+    display: flex;
+    flex-direction: column;
     width: 65%;
 }
 
 #resume {
     width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 #resume-title{
@@ -34,15 +44,15 @@
     font-weight: bold;
     color: white;
     background-color: black;
-    height: inherit;
+    padding: auto;
 }
 
 .title-container {
     border: 0;
     border-bottom: 2px solid white;
+    margin-bottom: 10px;
     padding: 10px;
-    height: 40px;
-    overflow:hidden;
+    height: 30px;
     text-align: center;
     vertical-align: middle;
 }
@@ -56,5 +66,159 @@
     color: white;
     letter-spacing: 3px;
     font-size: 25px;
-    height:inherit;
+    padding: auto;
+}
+
+.cart-product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cart-product-info{
+    flex-grow: 2;
+    width: 40%;
+}
+
+.cart-image{
+    float: left;
+    clear: both;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#info{
+    display: inline-block;
+    margin: 25px 10px;
+}
+
+#name-info{
+    display: block;
+    font-size: 25px;
+}
+#name-info::first-letter{
+    text-transform: uppercase;
+}
+
+#name-info:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#name-info, #size-info{
+    font-family: 'Strait',sans-serif;
+}
+
+#counter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#counter-span{
+    line-height: 38px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    background-color: white;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #0ef;
+}
+
+.counter-button{
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    border: 1px solid #0ef;
+    font-size: large;
+}
+
+.counter-button:hover{
+    cursor: pointer;
+    background-color: #eee;
+}
+
+#right{
+    border-left: none;
+}
+
+#left{
+    border-right: none;
+}
+
+#price-close{
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    line-height: 30px;
+}
+
+#price-info{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#delete-button{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#delete-button:hover{
+    cursor: pointer;
+}
+
+#delete-icon:hover{
+    color: red;
+    background-color: red;
+    border-radius: 100%;
+}
+
+#cart-info{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    height: 125px;
+}
+
+#labels{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+#prices{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.total-price{
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    flex-grow: 2;
+}
+
+#impuestos{
+    display: inline;
+    color: white;
+    font-size: small;
+}
+
+.sum-price{
+    font-size: 13px;
+    flex-grow: 1;
 }

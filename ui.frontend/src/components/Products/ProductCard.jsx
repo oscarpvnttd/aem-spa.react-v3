@@ -14,7 +14,7 @@ export const ProductCard = ({ id, precio, name, jname }) => {
         <h3 className='prname'>
           <b>{`${JSON.stringify(name).toUpperCase().replaceAll('"', '')} ${jname}`}</b>
         </h3>
-        <span className='price'><b>{precio}€</b></span>
+        <span className='price'>{precio}€</span>
         <button className="mas">VER MÁS</button>
       </NavLink>
     </div>

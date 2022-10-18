@@ -55,6 +55,7 @@
     font-size: large;
     width: min-content;
     color: white;
+    font-weight: bold;
 }
 
 
@@ -107,8 +108,16 @@
     max-width: 70%;
 }
 
+#product-images{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
 
 .imgs{
+    width: 49%;
+    height: auto;
     margin: 5px;
 }
 
@@ -196,4 +205,21 @@
     color: black;
     background-color: transparent;
     vertical-align: middle;
+}
+
+.detail{
+    font-size: 20px;
+    line-height: 25px;
+    display: block;
+    color: white;
+}
+
+#tallaje{
+    display: none;
+    font-size: large;
+    color: white;
+}
+
+#tallaje-img{
+    width: 100%;
 }

@@ -16,7 +16,16 @@
 import withAsyncImport from "../utils/withAsyncImport";
 
 import './Page/Page';
-import './Navbar/Navbar'
+import './Navbar/Navbar';
+import './Contact/Contact';
+import './Footer/CustomFooter';
+import './Cart/Cart';
+import './Colections/Colections';
+import './Login/Login';
+import './Newsletter/Newsletter';
+import './Products/Products';
+import './Products/Product';
+import './Signin/Signin';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
 

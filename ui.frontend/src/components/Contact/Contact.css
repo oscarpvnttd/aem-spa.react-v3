@@ -1,3 +1,12 @@
+.contact-label {
+    font-size: medium;
+    color: white;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: 0;
+}
+
 .file {
     position: relative;
     display: inline-block;
@@ -113,16 +122,6 @@ input[type="file" i] {
     position: relative;
     top: 30px;
     border-bottom: solid 1px #fff;
-}
-
-
-label {
-    font-size: medium;
-    color: white;
-    font-family: "Teko", sans-serif;
-    letter-spacing: 2px;
-    text-decoration: none;
-    margin: 0;
 }
 
 .contact-inp,

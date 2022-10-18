@@ -44,4 +44,4 @@ class Products extends Component {
 
 }
 
-export default MapTo('spa-react/components/products')(Products, ProductsConfig);
+export default MapTo('spa-react-v3/components/products')(Products, ProductsConfig);

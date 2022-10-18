@@ -46,11 +46,11 @@ class Login extends Component {
                                 : <Visibility className="vis" />
                             }
                         </button>
-                        <div className="olv">
+                    </div>
+                    <div className="olv">
                             <NavLink to="/" className="navolv">¿Olvidó su contraseña?</NavLink>
                             <p className="con"><Lock className="lock" />Conexión segura</p>
                         </div>
-                    </div>
 
                     <button className="logb">INICIAR SESIÓN</button>
                 </form>
@@ -61,4 +61,4 @@ class Login extends Component {
 
 }
 
-export default MapTo('spa-react/components/login')(Login, LoginConfig);
+export default MapTo('spa-react-v3/components/login')(Login, LoginConfig);

@@ -17,6 +17,7 @@ const NavbarConfig = {
 class Navbar extends Component {
 
     render() {
+
         return (
             <nav id="navb" className="navbar navbar-expand-sm navbar-black bg-black">
                 <NavLink className="nav-link" to="/">
@@ -48,6 +49,7 @@ class Navbar extends Component {
                 </NavLink>
                 <NavLink className="nav-link" to="">
                     <ShoppingBasket style={{ color: 'white' }} />
+                    <label id="cart-num">{(JSON.parse(localStorage.getItem('productList')) || []).length}</label>
                 </NavLink>
             </nav>
         );

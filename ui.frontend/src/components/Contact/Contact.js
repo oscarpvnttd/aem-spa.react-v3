@@ -9,10 +9,7 @@ import { TextField } from "@material-ui/core";
 require('./Contact.css')
 
 const ContactConfig = {
-    emptyLabel: 'Products',
-    isEmpty: function (props) {
-        return !props || !props.Products;
-    }
+    emptyLabel: 'Contact',
 };
 
 
@@ -27,14 +24,14 @@ class Contact extends Component {
                 </div>
                 <form className="contact-form">
                     <div>
-                        <label>ASUNTO</label>
+                        <label className="contact-label">ASUNTO</label>
                         <br />
                         <select className="contact-inp">
                             <option value="1">Camichan</option>
                         </select>
                     </div>
                     <div>
-                        <label>DIRECCIÓN DE CORREO ELECTRÓNICO</label>
+                        <label className="contact-label">DIRECCIÓN DE CORREO ELECTRÓNICO</label>
                         <br />
                         <input
                             type="email"
@@ -43,9 +40,9 @@ class Contact extends Component {
                         />
                     </div>
                     <div id="opcional">
-                        <label>ARCHIVO ADJUNTO</label>
+                        <label className="contact-label">ARCHIVO ADJUNTO</label>
                         <br />
-                        <label className="file">
+                        <label className="contact-label file">
                             <input type="file" id="file" aria-label="File browser example" />
                             <CloudUpload className="upload-icon"/>
                             <span className="file-custom"></span>
@@ -54,7 +51,7 @@ class Contact extends Component {
                         <span className="span-optional">opcional</span>
                     </div>
                     <div>
-                        <label>MENSAJE</label>
+                        <label className="contact-label">MENSAJE</label>
                         <br />
                         <textarea className="contact-text"
                             placeholder="¿Cómo podemos ayudarle?"
@@ -71,4 +68,4 @@ class Contact extends Component {
 
 }
 
-export default MapTo('spa-react/components/contact')(Contact, ContactConfig);
+export default MapTo('spa-react-v3/components/contact')(Contact, ContactConfig);

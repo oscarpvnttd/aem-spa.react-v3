@@ -5,7 +5,9 @@ import "@fontsource/strait"
 import { MapTo } from '@adobe/aem-react-editable-components';
 import { getProductById } from "../../utils/getProductById";
 
-require('./Product.css')
+require('./Product.css');
+
+let selected = 'M';
 
 const ProductConfig = {
     emptyLabel: 'Product',
@@ -14,12 +16,36 @@ const ProductConfig = {
     }
 };
 
+const addProduct = (product) => {
+    let list = JSON.parse(localStorage.getItem('productList')) || [];
+    let exists = false;
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].id === product.id && list[i].tallas === selected) {
+            list[i].count += 1;
+            exists = true;
+            break;
+        }
+    }
+    if (!exists) list.push({ ...product, tallas: selected, images: product.images[0], count: 1 });
+    localStorage.setItem('productList', JSON.stringify(list));
+}
+
+const changeSelected = (talla) => {
+    selected = talla;
+}
+
+
 
 class Product extends Component {
 
     constructor(props) {
         super(props);
         this.product = getProductById(this.props.id);
+        this.isActive = false;
+    }
+
+    handler = () => {
+        this.forceUpdate();
     }
 
     render() {
@@ -31,9 +57,14 @@ class Product extends Component {
                         <div id="product-images">
                             {
                                 this.product.images.map(image => (
-                                    <img className="imgs" key={image} src={require(`../../data/images/${image}.jpg`).default}/>
+                                    <img className="imgs" key={image} src={require(`../../data/images/${image}.jpg`).default} />
                                 ))
                             }
+                        </div>
+                        <div id="details">
+                            {this.product.detalles.map((detalle) => (
+                                <span key={detalle} className="detail">{detalle}</span>
+                            ))}
                         </div>
                     </div>
                     <div className="col right">
@@ -44,16 +75,17 @@ class Product extends Component {
                             <br />
                             <div id="tallas">
                                 {this.product.tallas.map(talla => (
-                                    <button key={talla} className="talla">{talla}</button>
+                                    <button key={talla} onClick={() => changeSelected(talla)} className="talla">{talla}</button>
                                 ))}
                             </div>
                             <br />
-                            <button id="add-button"><AddShoppingCart id="cart-icon"/> AÑADIR</button>
+                            <button id="add-button" onClick={() => addProduct(this.product)}><AddShoppingCart id="cart-icon" /> AÑADIR</button>
                             <br />
-                            <button id="guide-button">GUIA DE TALLAS</button>
+                            <button id="guide-button"  onClick={() => {this.isActive = !this.isActive; this.handler()}}>GUIA DE TALLAS</button>
                         </div>
-                        <div id="details">
-                            detalles
+                        <div id="tallaje" style={{display: this.isActive? 'block':'none'}}>
+                            <img id="tallaje-img" src={require("../../data/images/tallaje.png").default}
+                            />
                         </div>
                     </div>
                 </div>

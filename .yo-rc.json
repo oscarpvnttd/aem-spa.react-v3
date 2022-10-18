@@ -3,7 +3,7 @@
     "promptValues": {
       "mavenAppsModuleName": "ui.apps",
       "mavenBundleModuleName": "core",
-      "javaRootPackageName": "aem-spa.react-v3.core"
+      "javaRootPackageName": "com.adobe.aem.spa.react.core"
     }
   }
 }

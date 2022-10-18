@@ -40,4 +40,4 @@ class Colections extends Component {
 
 }
 
-export default MapTo('spa-react/components/colections')(Colections, ColectionsConfig);
+export default MapTo('spa-react-v3/components/colections')(Colections, ColectionsConfig);

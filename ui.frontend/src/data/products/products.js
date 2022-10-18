@@ -7,7 +7,11 @@ export const products = [
         'coleccion': 'genesis',
         'tallas': ['S','M','L','XL','2XL','3XL'],
         'precio': '24,00',
-        'images':['ayanami', 'ayanami2', 'ayanami3']
+        'images':['ayanami', 'ayanami2', 'ayanami3'],
+        'detalles': ['Estilo oversize','Manga pegada',
+                    'Cuello de canalé 1x1','Bies interior de tejido principal en cuello',
+                    'Puntada doble en puños y bajo','PUNTO DE JERSEY SENCILLO',
+                    '100% ALGODÓN ORGÁNICO HILADO Y PEINADO']
     },
     {
         'id': 'alchemy',
